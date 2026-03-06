@@ -1,0 +1,44 @@
+{
+  "_comment": "Copy to .claude/settings.json in your project root. Commit to git for team sharing.",
+  "_comment2": "For personal overrides, use .claude/settings.local.json (add to .gitignore)",
+
+  "model": "claude-sonnet-4-6",
+
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(yarn *)",
+      "Bash(pnpm *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git pull)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(grep *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)"
+    ]
+  },
+
+  "hooks": [
+    {
+      "_comment": "Example: Run Prettier after every file edit. Remove if not using Prettier.",
+      "matcher": "Edit|Write",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "prettier --write \"$CLAUDE_FILE_PATHS\" 2>/dev/null || true"
+        }
+      ]
+    }
+  ]
+}

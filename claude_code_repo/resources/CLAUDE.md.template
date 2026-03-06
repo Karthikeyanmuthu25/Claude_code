@@ -1,0 +1,74 @@
+# Project Context
+
+> Auto-loaded by Claude Code every session. Keep under 200 lines.
+> Generate automatically with `/init` or customise this template manually.
+
+---
+
+## Project Overview
+
+- **Name:** [Your Project Name]
+- **Type:** [Web app / API / CLI / Library / Monorepo]
+- **Stack:** [e.g. React + TypeScript + Node.js + PostgreSQL]
+- **Purpose:** [1-2 sentence description]
+
+---
+
+## Architecture
+
+```
+/
+├── src/          # [What lives here]
+├── server/       # [What lives here]
+├── tests/        # [What lives here]
+└── docs/         # [What lives here]
+```
+
+Key decisions:
+- [Architecture choice 1]
+- [Architecture choice 2]
+
+---
+
+## Code Standards
+
+- Language & types: [e.g. TypeScript strict mode]
+- Linting: [e.g. ESLint + Prettier]
+- Naming: [e.g. camelCase functions, PascalCase components]
+- Exports: [e.g. named exports only, no default exports]
+- Error handling: [e.g. always use Result types, never throw raw errors]
+
+---
+
+## Common Commands
+
+```bash
+[dev command]     # Start development
+[build command]   # Build for production
+[test command]    # Run tests
+[lint command]    # Check linting
+```
+
+---
+
+## Patterns to Follow
+
+- [Pattern 1 — e.g. Use React Query for all server state]
+- [Pattern 2 — e.g. Validate all inputs with Zod]
+- [Pattern 3 — e.g. Co-locate tests with components]
+
+---
+
+## What to Avoid
+
+- Do NOT [rule 1]
+- Do NOT [rule 2]
+- Do NOT [rule 3]
+
+---
+
+## References
+
+- [Link to architecture doc]
+- [Link to API spec]
+- [Link to deployment guide]

@@ -1,0 +1,69 @@
+# .claudeignore — Template
+# Copy this to your project root as: .claudeignore
+# Prevents Claude Code from processing irrelevant files, saving tokens and speeding up sessions.
+
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+vendor/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# ── Build outputs ─────────────────────────────────────────────
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+*.min.js
+*.min.css
+
+# ── Environment & secrets ─────────────────────────────────────
+# CRITICAL: Never let Claude see these
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+secrets/
+
+# ── Lock files (rarely useful to Claude) ─────────────────────
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+Pipfile.lock
+poetry.lock
+composer.lock
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+# ── IDE / OS ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+
+# ── Large data / media ────────────────────────────────────────
+*.csv          # Remove if Claude needs to analyse your data
+*.sql
+*.sqlite
+*.db
+*.mp4
+*.mp3
+*.zip
+*.tar.gz
+*.pdf          # Remove if Claude needs to read PDFs
+
+# ── Test snapshots (usually irrelevant) ──────────────────────
+**/__snapshots__/
